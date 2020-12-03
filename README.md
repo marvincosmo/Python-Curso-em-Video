@@ -1,2 +1,2 @@
-# Python Curso em Video
- Exercicios de Python aprendidos através do Curso em Video
+# Python Curso em Vídeo
+ Exercícios de Python aprendidos através do Curso em Video
