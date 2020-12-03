@@ -1,0 +1,41 @@
+Aula 15 - Interrompendo repetições while
+
+Na estrutura anterior, eram dadas ordens até que o personagem cumprisse a ordem final, que era chegar no objetivo final.
+
+Exemplo:
+enquanto não maçã
+	se terra
+		passo
+	se buraco
+		pula
+	se moeda
+		pega
+pega
+
+Mas nesta estrutura, o ciclo de ordens repetidas vai acontecer até que haja um comando de paralisação, ou "break".
+
+Exemplo:
+enquanto verdadeiro
+	se terra
+		passo
+	se buraco
+		pula
+	se moeda
+		pega
+	se trofeu
+		pula
+		interrompa
+pega
+
+Passando para a linguagem Python:
+while True:
+	if terra
+		passo
+	if buraco
+		pula
+	if moeda
+		pega
+	if trofeu
+		pula
+		break
+pega

@@ -1,0 +1,49 @@
+Aula 12 - Condições Aninhadas
+
+Em todas as linguagens de programação, se pode fazer estruturas condicionais dentro de estruturas condicionais, ou seja, aninhar condições.
+
+Neste momento, veremos situações em que não existe apenas a condição verdadeira ou a condição falsa, há mais opções, que vão surgindo a partir das condições do programa.
+
+Por exemplo:
+
+carro.siga()
+se carro.esquerda()
+	carro.siga()
+	carro.direita()
+	carro.siga()
+	carro.direita()
+	carro.esquerda()
+	carro.siga()
+	carro.direita()
+	carro.siga()
+senão se carro.direita()
+	carro.siga()
+	carro.esquerda()
+	carro.siga()
+	carro.esquerda()
+	carro.siga()
+senão
+	carro.siga()
+carro. pare()
+
+"Traduzindo" os comandos para o Python, temos:
+
+carro.siga()
+if carro.esquerda()
+	carro.siga()
+	carro.direita()
+	carro.siga()
+	carro.direita()
+	carro.esquerda()
+	carro.siga()
+	carro.direita()
+	carro.siga()
+elif carro.direita()
+	carro.siga()
+	carro.esquerda()
+	carro.siga()
+	carro.esquerda()
+	carro.siga()
+else
+	carro.siga()
+carro. pare()

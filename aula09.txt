@@ -1,0 +1,111 @@
+Utilizando como base o comando de Python:
+              ***********************
+frase = Curso em Vídeo Python
+              ***********************
+Esta string tem 21 microespaços, pois começa do microespaço 0 (onde está o caracter 'C') e termina no microespaço 20 (onde está o caracter 'n'), e considera todos os caracteres, inclusive os que contem espaço.
+
+TÉCNICA DE FATIAMENTO - Pegar pedaços da string
+
+Ex: frase[9]  
+
+OBS: Colchetes são caracteres usados para determinar listas.
+
+R: 'V', pois é o caractere que se encontra no microespaço 9 da string.
+
+OBS: O Python é case sensitive. V não é igual a v.
+
+Ex: frase[9:13]
+
+R: 'Víde', pois a contagem considera o primeiro microespaço mencionado, mas desconsidera o último.
+
+Ex: frase[9:21]
+
+R: 'Vídeo Python', pois ele começa do microespaço 9 e vai até o 21, mesmo que não haja um microespaço 21 (apesar de isso não ser aconselhável).
+
+Ex: frase[9:21:2]
+
+R: 'VdoPto', pois ele começa do microespaço 9 e vai até o 21, pulando de 2 em 2 microespaços.
+
+Ex: frase[:5]
+
+R: 'Curso', pois como não há informação antes dos dois pontos, ele começa do começo da string (do microespaço 0) e vai até o microespaço 5, desconsiderando o último.
+
+Ex: frase[15:]
+
+R: 'Python', pois como não há informação depois dos dois pontos, ele começa do ponto informado (o microespaço 15) e vai até o final.
+
+Ex: frase[9::3]
+
+R: 'VePh', pois como não há informação entre um símbolo de  dois pontos e outro, ele começa do ponto informado (o microespaço 9) e vai até o final, pulando de 3 em 3 microespaços.
+
+Ou seja, em todos os exemplos de FATIAMENTO, demonstra-se que vai ser mencionado o nome da variável que recebe a string, e dentro das chaves, o primeiro número é o início, o do segundo é o final e o terceiro é a ordem de contagem dos microespaços.
+
+
+TÉCNICA DE ANÁLISE - Saber algumas informações sobre a string
+
+Ex: len(frase) - Comprimento da frase.
+
+R: 21
+
+Ex: frase.count('o') - Contagem de um caracter específico na string toda.
+
+R: 3
+
+Ex: frase.count('o', 0, 13) - Contagem de um caracter específico na string, começando do primeiro microespaço mencionado e terminando no segundo, desconsiderando este.
+
+R: 1
+
+Ex: frase.find('deo') - Em qual posição é encontrada a expressão 'deo'. A resposta vai ser a posição em que a expressão começa.
+
+R: 11
+
+Ex: frase.find('Android') - Em qual posição é encontrada a expressão 'Android'.
+
+R: -1, pois não há esta expressão na string.
+
+Ex: 'Curso' in frase - Responde se há a expressão 'Curso' na string.
+
+R: True
+
+
+TÉCNICA DE TRANSFORMAÇÃO - Para fazer alguma modificação na string
+
+Ex: frase.replace('Python', 'Android') - Troca uma expressão por outra. Se houver mais ou menos microespaços na nova expressão, o Python se adapta. A troca não é permanente.
+
+R: Curso em Vídeo Android
+
+Ex: frase.upper() - Coloca todos os caracteres da string em letras maiúsculas.
+
+R: CURSO EM VÍDEO PYTHON
+
+Ex: frase.lower() - Coloca todos os caracteres da string em letras minúsculas.
+
+R: curso em vídeo python
+
+Ex: frase.capitalize() - Coloca a primeira letra maiúscula no início da string, e todas as outras em minúsculas.
+
+R: Curso em vídeo python
+
+Ex: frase. title() - Coloca a primeira letra maiúscula em cada uma das palavras da string.
+
+R: Curso Em Vídeo Python
+
+Ex: frase.strip() - Elimina todos os espaços inúteis no início e no final da string, mas mantém os que separam as palavras.
+
+Ex: frase.rstrip() - Elimina todos os espaços inúteis no lado direito da string (no final).
+
+Ex: frase.lstrip() - Elimina todos os espaços inúteis no lado esquerdo da string (no começo).
+
+
+TÉCNICA DE DIVISÃO - Para dividir a string em partes
+
+Ex: frase.split() - Divide a string considerando os caracteres com espaços.
+
+R: [Curso, em, Vídeo, Python]
+
+
+TÉCNICA DE JUNÇÃO - Para juntar partes separadas da string
+
+Ex: '-'.join(frase) - Junta as partes separadas colocando um traço ('-') entre as partes da string
+
+R: Curso-em-Vídeo-Python

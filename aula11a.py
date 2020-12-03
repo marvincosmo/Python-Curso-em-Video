@@ -1,0 +1,15 @@
+""" Teste de cores no terminal"""
+
+print('\33[30;41m Teste \33[m', end=' ')
+print('\33[4;33;44m Teste \33[m', end=' ')
+print('\33[1;35;43m Teste \33[m', end=' ')
+print('\33[30;42m Teste \33[m', end=' ')
+print('\33[m Teste ', end=' ')
+print('\33[37;107m Teste \33[m', end=' ')
+print('\33[7;30m Teste \33[m', end=' ')
+print('\33[97;40m Teste \33[m\n')
+print('\33[1;31;43m Olá, Mundo! \33[m', end=' ')
+print('\33[4;30;45m Olá, Mundo! \33[m', end=' ')
+print('\33[7;30m Olá, Mundo! \33[m', end=' ')
+print('\33[0;33;44m Olá, Mundo! \33[m', end=' ')
+print('\33[7;33;44m Olá, Mundo! \33[m', end=' ')
