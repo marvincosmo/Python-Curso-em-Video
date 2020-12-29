@@ -1,0 +1,15 @@
+a = (2, 5, 4)
+b = (5, 8, 1, 2)
+c = a + b
+d = b + a
+print(f'A junção das tuplas a e b é {c}.')
+print(f'A junção das tuplas b e a é {d}.')
+print(f'A tupla c contém {len(c)} itens.')
+print(f'Há {c.count(5)} números 5 na tupla c.')
+print(f'Há {c.count(4)} números 4 na tupla c.')
+print(f'Há {c.count(9)} números 9 na tupla c.')
+print(f'O número 8 está na tupla c na posição {c.index(8)}.')
+print(f'O número 8 está na tupla d na posição {d.index(8)}.')
+print(f'O número 4 está na tupla d na posição {d.index(4)}.')
+print(f'O primeiro número 5 da tupla d está na posição {d.index(5)}.')
+print(f'Já o segundo número 5 da tupla d está na posição {d.index(5, 1)}.')
